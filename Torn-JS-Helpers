@@ -5,8 +5,8 @@
 // ==UserLibrary==
 // @name        Torn-JS-Helpers
 // @description Commonly used functions in my Torn scripts.
-// @require     
-// @updateURL   
+// @require     http://githubusercontent.com/awolfa/TNstuff/master/Torn-JS-Helpers
+// @updateURL   http://githubusercontent.com/awolfa/TNstuff/master/Torn-JS-Helpers
 // @connect     api.torn.com
 // @grant       GM_xmlhttpRequest
 // @grant       GM_getValue
