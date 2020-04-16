@@ -1,0 +1,33 @@
+// ==UserScript==
+// @exclude     *
+// @namespace   https://github.com/edlau2
+
+// ==UserLibrary==
+// @name        Torn-JS-Helpers
+// @description Commonly used functions in my Torn scripts.
+// @require     
+// @updateURL   
+// @connect     api.torn.com
+// @grant       GM_xmlhttpRequest
+// @grant       GM_getValue
+// @grant       GM_setValue
+// @version     0.6
+// @license     MIT
+// ==/UserLibrary==
+
+// ==/UserScript==
+
+
+///////////////////////////////////////////////////////////////////////////////////
+// Validate an API key and prompt if misssing
+///////////////////////////////////////////////////////////////////////////////////
+
+var api_key = GM_getValue('gm_api_key');
+function validateApiKey() {
+    if (api_key == null || api_key == 'undefined' || typeof api_key === 'undefined' || api_key == '') {
+        api_key = prompt("Please enter your API key.\n" +
+                         "Your key will be saved locally so you won't have to be asked again.\n" +
+                         "Your key is kept private and not shared with anyone.", "");
+        GM_setValue('gm_api_key', api_key);
+    }
+}
