@@ -14,11 +14,11 @@ GM_addStyle(`
 		padding: 0 20px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: left;
         width: 100%
-        font-size: 12pt;
+        font-size: 16pt;
         font-weight: bold;
-        font-color: white;
+        font-color: red;
 	}
 `)
 
